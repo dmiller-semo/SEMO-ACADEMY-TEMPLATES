@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3CX Academy - Southeast Missouri State University</title>
+    <style>
+        /* General Body & Typography (Inspired by SEMO style) */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header (Mimicking SEMO's red bar) */
+        .page-header {
+            background-color: #ee1c25; /* SEMO Red */
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .page-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        /* Two-Column Layout */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 40px;
+        }
+
+        .primary-column {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .secondary-column {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Content Styling */
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #333;
+            border-bottom: 2px solid #ee1c25;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #555;
+            margin-top: 30px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: #ee1c25;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .btn-primary:hover {
+            background-color: #c0141c;
+        }
+
+        /* Sidebar Styling */
+        .sidebar-box {
+            margin-bottom: 30px;
+        }
+        .sidebar-box ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar-box ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .sidebar-box ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .sidebar-box ul li a:hover {
+            text-decoration: underline;
+        }
+        .sidebar-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        /* Accordion for Certifications */
+        .accordion {
+            border-bottom: 1px solid #ddd;
+        }
+        .accordion-header {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.4s;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion-header::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: #777;
+        }
+        .accordion-header.active::after {
+            content: "-";
+        }
+        .accordion-header:hover, .accordion-header.active {
+            background-color: #ddd;
+        }
+        .accordion-panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-panel p {
+            margin-top: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>3CX Academy</h1>
+        </header>
+
+        <div class="main-content">
+            <main class="primary-column">
+                <p class="intro-text">
+                    The Department of Engineering and Technology at Southeast Missouri State University is proud to partner with 3CX to offer the **3CX Academy**. This program equips students with the essential skills to deploy, manage, and secure modern Unified Communications (UC) solutions, a critical component of today's interconnected business world.
+                </p>
+                
+                <h2>What is 3CX?</h2>
+                <p>
+                    3CX is a global leader in business VoIP IP PBX and Unified Communications technology. It offers an open-standards, software-based PBX that works with popular IP phones and SIP trunks, whether on-premise or in the cloud. Students in the 3CX Academy gain hands-on experience with a powerful, flexible communication system used by over 600,000 companies worldwide.
+                </p>
+                <a href="https://www.3cx.com/phone-system/what-is-3cx/" target="_blank" class="btn-primary">Learn More About 3CX Technology</a>
+
+                <h3>Why Study Unified Communications?</h3>
+                <p>
+                    In today's digital landscape, businesses require more than just a traditional phone system. Unified Communications integrates voice, video conferencing, live chat, mobile apps, and more into a single, seamless platform. Professionals with these skills are in high demand to help organizations improve collaboration, boost productivity, and reduce telecommunication costs.
+                </p>
+                
+                <h3>3CX Certification Pathways</h3>
+                <p>Our curriculum is aligned with the official 3CX certification program, providing students with a clear pathway to earning industry-recognized credentials. These certifications validate your skills and make you a more competitive candidate in the job market.</p>
+                
+                <div class="accordion">
+                    <button class="accordion-header">3CX Certified Basic</button>
+                    <div class="accordion-panel">
+                        <p><strong>Focus:</strong> Foundational knowledge of deploying and managing a 3CX system. Topics include installation, firewall configuration, SIP trunks, extensions, and basic troubleshooting. This is the starting point for any 3CX professional.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <button class="accordion-header">3CX Certified Intermediate</button>
+                    <div class="accordion-panel">
+                        <p><strong>Focus:</strong> Deeper understanding of more complex concepts. This level covers advanced extension settings, ring groups, call queues, digital receptionists, and reporting. It prepares students to handle more sophisticated business requirements.</p>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <button class="accordion-header">3CX Certified Advanced</button>
+                    <div class="accordion-panel">
+                        <p><strong>Focus:</strong> Mastery of advanced system capabilities. This is the highest level of certification, covering topics like bridges, system security, failover, and advanced troubleshooting. Achieving this certification demonstrates expert-level proficiency.</p>
+                    </div>
+                </div>
+
+                <h3>SEMO Courses Integrating 3CX and VoIP Concepts</h3>
+                <p>The skills you learn in the 3CX Academy are directly applicable to, and integrated with, several courses within the Department of Engineering and Technology curriculum:</p>
+                <ul>
+                    <li><strong>TN425/TN625 - Wireless Communications and Mobile Data Networks:</strong> Explores how VoIP traffic is handled over secure Wi-Fi and cellular networks, including QoS (Quality of Service) considerations.</li>
+                    <li><strong>TN435 - Network Security:</strong> Covers securing UC platforms from threats, including SIP-based attacks, toll fraud, and ensuring encrypted communication.</li>
+                    <li><strong>TN475 - Enterprise Networking:</strong> Focuses on configuring switches and routers with proper VLAN segmentation and QoS policies to support reliable voice and video traffic.</li>
+                    <li><strong>TN495 - Cybersecurity Infrastruture Capstone Project:</strong> Students may design and implement a comprehensive secure communications solution for a real-world business scenario using the 3CX platform.</li>
+                </ul>
+
+            </main>
+
+            <aside class="secondary-column">
+                <div class="sidebar-box">
+                    <a href="https://www.3cx.com/" target="_blank">
+                        <img src="https://www.3cx.com/wp-content/uploads/2022/02/3cx-logo-1.png" alt="Official 3CX Logo">
+                    </a>
+                </div>
+                <div class="sidebar-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://www.3cx.com/academy/certification-program/" target="_blank">Official 3CX Certification Program</a></li>
+                        <li><a href="https://www.3cx.com/docs/" target="_blank">3CX Technical Documentation</a></li>
+                        <li><a href="https://www.3cx.com/community/" target="_blank">3CX Community Forums</a></li>
+                        <li><a href="https://www.3cx.com/blog/" target="_blank">The Official 3CX Blog</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-box">
+                    <h3>Contact Information</h3>
+                    <p>
+                        <strong>David Miller</strong><br>
+                        Instructor<br>
+                        Department of Engineering and Technology<br>
+                        <a href="mailto:dmiller@semo.edu">dmiller@semo.edu</a><br>
+                        Phone: 573-651-2336<br>
+                        Office: PB213H
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for Accordion Interactivity
+        const accordions = document.querySelectorAll('.accordion-header');
+
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
